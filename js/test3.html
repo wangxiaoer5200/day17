@@ -43,20 +43,20 @@
     function findAllHtmlSpanInOneSection(sectionId) {
     	var x=document.getElementById("sectionId");
     	var y=x.getElementsByTagName("span");
-    	var z=y.innerHTML("HTML");
+    	var z=y.textContent("HTML");
         // 返回某个section下所有span中内容为HTML的span标签
     }
 
     function findListItem(sectionId, spanCont) {
     	var x=document.getElementById("sectionId");
-    	var y=x.getElementsByTagName("span").innerHTML("spanCont");
+    	var y=x.getElementsByTagName("span").textContent("spanCont");
     	var z=y.parentNode("Li");
         // 返回某个section下，所有所包含span内容为spanCont的LI标签
     }
 
     function getActiveLinkContent(sectionId) {
     	var x=document.getElementById("sectionId");
-    	var y=x.getElementsByClassName("active").innerHTML;
+    	var y=x.getElementsByClassName("active").textContent;
         // 返回某个section下，class为active的链接中包含的文字内容
     }
     </script>
